@@ -54,7 +54,8 @@ function mergeSort(items){
     }
 
     var work = [];
-    for (var i=0, len=items.length; i < len; i++){
+    var len = i = items.length;
+    while (i--){
         work.push([items[i]]);
     }
     work.push([]);  //in case of odd number of items
